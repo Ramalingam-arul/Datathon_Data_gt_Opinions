@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy>=2.0
+bcrypt
+requests
+python-dotenv
+# only needed when running INSIDE Catalyst functions:
+# zcatalyst-sdk
+streamlit

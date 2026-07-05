@@ -1,0 +1,6 @@
+email,password,full_name,role,district
+admin@kspdemo.in,Admin@2026,Priya Deshpande,admin,Kalaburagi
+investigator@kspdemo.in,Invest@2026,Basavaraj Pujari,investigator,Kalaburagi
+analyst1@kspdemo.in,Analyst@2026,Manasa R,analyst,Ballari
+supervisor@kspdemo.in,Super@2026,Akash V,supervisor,Raichur
+policymaker@kspdemo.in,Policy@2026,Demo Policymaker,policymaker,Bidar
