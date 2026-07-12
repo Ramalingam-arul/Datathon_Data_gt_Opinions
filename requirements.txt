@@ -7,3 +7,4 @@ python-dotenv
 # only needed when running INSIDE Catalyst functions:
 # zcatalyst-sdk
 streamlit
+watchdog

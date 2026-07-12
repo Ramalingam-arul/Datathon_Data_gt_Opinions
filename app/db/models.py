@@ -2,6 +2,7 @@
 Column names intentionally mirror the Catalyst Data Store tables 1:1,
 so the Catalyst adapter can reuse the same dicts.
 """
+from typing import Optional
 from datetime import datetime, timezone
 from sqlalchemy import String, Integer, Boolean, DateTime, Text, ForeignKey
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
@@ -26,7 +27,7 @@ class User(Base):
     role: Mapped[str] = mapped_column(String(30), default="analyst")  # analyst | admin | sho
     district: Mapped[str] = mapped_column(String(60), default="")
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
-    last_login: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    last_login: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
     CREATEDTIME: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
     sessions: Mapped[list["ChatSession"]] = relationship(back_populates="user")
@@ -44,7 +45,7 @@ class ChatSession(Base):
     # [{"role":"user","content":"...","ts":"..."}, {"role":"assistant",...}]
     messages_json: Mapped[str] = mapped_column(Text, default="[]")
     message_count: Mapped[int] = mapped_column(Integer, default=0)
-    last_message_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    last_message_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
     CREATEDTIME: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
     user: Mapped["User"] = relationship(back_populates="sessions")

@@ -1,0 +1,36 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 2
+  },
+  "actives": {
+    "project": 1,
+    "env": 2
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "44907000000025001",
+      "name": "Datathon-data-gt-opinions",
+      "domain": {
+        "id": "50043661113",
+        "name": "datathon-data-gt-opinions-60074199264.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "50043684344",
+          "name": "Production",
+          "type": 1
+        },
+        {
+          "idx": 2,
+          "id": "60074199264",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
