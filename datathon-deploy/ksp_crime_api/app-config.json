@@ -1,0 +1,7 @@
+{
+  "name": "ksp-crime-api",
+  "type": "appsail",
+  "build_path": ".",
+  "stack": "python_3_11",
+  "command": "python3 server.py"
+}

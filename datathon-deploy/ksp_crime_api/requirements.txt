@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+sqlalchemy>=2.0
+bcrypt
+requests
+python-dotenv

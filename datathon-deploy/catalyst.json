@@ -1,0 +1,8 @@
+{
+  "appsail": [
+    {
+      "name": "ksp-crime-api",
+      "source": "ksp_crime_api"
+    }
+  ]
+}
