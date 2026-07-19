@@ -3,3 +3,7 @@ chatbot_dev.db
 __pycache__/
 .venv/
 .DS_Store
+webui/node_modules/
+webui/dist/
+webui/node_modules/
+webui/dist/
